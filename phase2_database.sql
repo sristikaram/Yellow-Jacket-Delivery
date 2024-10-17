@@ -1,8 +1,5 @@
--- CS4400: Introduction to Database Systems: Saturday, June 22, 2024
--- Yellow Jacket Delivery Project Database TEMPLATE (v1.0)
+-- Yellow Jacket Delivery Project Database 
 
-/* This is a standard preamble for most of our scripts.  The intent is to establish
-a consistent environment for the database behavior. */
 set global transaction isolation level serializable;
 set global SQL_MODE = 'ANSI,TRADITIONAL';
 set names utf8mb4;
@@ -11,8 +8,6 @@ set SQL_SAFE_UPDATES = 0;
 drop database if exists yellow_jacket_delivery;
 create database if not exists yellow_jacket_delivery;
 use yellow_jacket_delivery;
-
--- Define the database structures and enter the denormalized data
 
 CREATE TABLE `User` (
     username VARCHAR(40) NOT NULL,
